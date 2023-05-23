@@ -7,9 +7,6 @@ const fetchBreedDescription = function(breedName, callback) {
       callback(error);
       return;
     }
-    // if (breed === undefined) {
-    //   return "Please give me a breed to work with.";
-    // }
     const data = JSON.parse(body);
     if (data.length === 0) {
       callback(`We don't have that breed on file. Maybe try one like "Chartreux" or "Siberian"`);
